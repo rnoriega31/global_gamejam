@@ -14,12 +14,13 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
-      <script>scripts\illuminate.gml</script>
+	  <script>scripts\horizontal_movement.gml</script>
+	  <script>scripts\collision.gml</script>
       <script>scripts\jump.gml</script>
-      <script>scripts\collision.gml</script>
-      <script>scripts\horizontal_movement.gml</script>
+	  <script>scripts\illuminate.gml</script>
       <script>scripts\double_jump.gml</script>
       <script>scripts\take_damage.gml</script>
+	  <script>scripts\apply_echolocate.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -29,6 +30,8 @@
     <object>objects\Player</object>
     <object>objects\Spike</object>
     <object>objects\HitBox</object>
+	<object>objects\EchoLocatable</object>
+    <object>objects\MovingPlatform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestArea</room>

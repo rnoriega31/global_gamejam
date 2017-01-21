@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>Platform</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>apply_echolocate(id);
+
+movement_duration   = 60;
+position_offset     = 1;
 </string>
           </argument>
         </arguments>
@@ -48,30 +51,51 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_alpha = decorator_echolocatable.visibility;
-draw_self();
+            <string>var next_position = positions[position_offset];
+
+// :(
+var next_position_x = next_position[0];
+var next_position_y = next_position[1];
+/*
+var new_x = floor((next_position_x - x) / movement_duration);
+var new_y = floor((next_position_y - y) / movement_duration);
+
+if (abs(new_x) &gt; abs(next_position_x - x)) {
+    show_debug_message("this happened on x");
+    new_x = next_position_x - x;
+}
+
+if (abs(new_y) &gt; abs(next_position_y - y)) {
+    show_debug_message("this happened on x");
+    new_y = next_position_y - y;
+}
+
+x += new_x;
+y += new_y;
+
+if (x == next_position_x &amp;&amp; y == next_position_y) {
+    show_debug_message("object reached position at offset: " + string(position_offset));
+    if (position_offset + 1 &gt;= array_length_1d(positions)) {
+        position_offset = 0;
+    } else {
+        position_offset++;
+    }
+}
+*/
+
+var spd = 1;
+
+if (point_distance(x, y, next_position_x, next_position_y) &gt; spd) {
+    move_towards_point(next_position_x, next_position_y, spd);
+} else {
+    if (position_offset + 1&gt;= array_length_1d(positions)) {
+        position_offset = 0;
+    } else {
+        position_offset++;
+    }
+    //speed = 0;
+    show_debug_message("reached"); 
+}
 </string>
           </argument>
         </arguments>

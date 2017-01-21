@@ -86,10 +86,10 @@ instance_destroy();
 current_alpha -= 1/duration;
 r += expand_rate;
 
-for (var i = 0; i &lt; instance_number(Platform); i++) {
-    var current_platform = instance_find(Platform, i);
-    if (collision_circle(x, y, r, current_platform, false, true)) {
-        current_platform.state = state_platform.going_visible;
+for (var i = 0; i &lt; instance_number(EchoLocatable); i++) {
+    var current_echolocatable = instance_find(EchoLocatable, i);
+    if (collision_circle(x, y, r, current_echolocatable.collision_target, true, true)) {
+        current_echolocatable.echolocatable_state = state_echolocatable.going_visible;
     }
 }
 </string>
