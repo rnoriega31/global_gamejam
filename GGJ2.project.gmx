@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Platform</sprite>
     <sprite>sprites\spr_Player</sprite>
+    <sprite>sprites\spr_Spike</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,12 +17,15 @@
     <script>scripts\collision.gml</script>
     <script>scripts\jump.gml</script>
     <script>scripts\illuminate.gml</script>
+    <script>scripts\take_damage.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Light</object>
     <object>objects\Platform</object>
     <object>objects\MouseTest</object>
     <object>objects\Player</object>
+    <object>objects\Spike</object>
+    <object>objects\HitBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestArea</room>
