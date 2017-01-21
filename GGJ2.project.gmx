@@ -7,13 +7,21 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Platform</sprite>
+    <sprite>sprites\spr_Player</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\horizontal_movement.gml</script>
+    <script>scripts\collision.gml</script>
+    <script>scripts\jump.gml</script>
+    <script>scripts\illuminate.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Light</object>
     <object>objects\Platform</object>
     <object>objects\MouseTest</object>
+    <object>objects\Player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestArea</room>

@@ -27,7 +27,16 @@
             <kind>1</kind>
             <string>
 
-can_collision = true;
+duration = room_speed/3;
+current_alpha = 0;
+
+enum state_platform {
+    invisible,
+    going_visible,
+    going_invisible
+}
+
+state = state_platform.invisible;
 </string>
           </argument>
         </arguments>
@@ -52,16 +61,32 @@ can_collision = true;
             <kind>1</kind>
             <string>/// collision with Light
 
+switch (state) {
 
-if (instance_exists(Light)) {
-    var obj_Light = instance_find(Light, 0);
+    case state_platform.invisible:
+        current_alpha = 0;
+        break;
+        
+    case state_platform.going_visible:
     
-    if (collision_circle(obj_Light.x, obj_Light.y, obj_Light.r, id, false, false)) {
-        if (can_collision) {
-            show_debug_message(string(obj_Light.x) + " " + string(obj_Light.y));
-            can_collision = false;
+        show_debug_message(string(current_alpha))
+    
+        if (current_alpha &lt; 1) {
+            current_alpha += 1/duration;
+        } else {
+            current_alpha = 1;
+            state = state_platform.going_invisible;
         }
-    }
+        break;
+        
+    case state_platform.going_invisible:
+        if (current_alpha &gt; 0) {
+            current_alpha -= 1/duration;
+        } else {
+            current_alpha = 0;
+            state = state_platform.invisible;
+        }
+        break;
 }
 </string>
           </argument>
@@ -86,12 +111,7 @@ if (instance_exists(Light)) {
           <argument>
             <kind>1</kind>
             <string>
-image_alpha = 0;
-
-if (!can_collision) {
-    image_alpha = 1;
-}
-
+image_alpha = current_alpha;
 draw_self();
 </string>
           </argument>
