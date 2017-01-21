@@ -1,6 +1,6 @@
 ///jump()
 
 if (jump_key and place_meeting(x, y + 1, Platform)) {
-    
-    vspd -= 20;
+    vspd -= jump_spd;
+    state = state_player_movement.jumping;
 }

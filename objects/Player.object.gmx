@@ -29,10 +29,16 @@
 spd = 6;
 hspd = 0;
 vspd = 0;
-grav = 1.5;
+grav = 1.0;
+
+jump_spd = 20;
+double_jump_spd = floor(jump_spd * 0.9);
 
 enum state_player_movement {
-    moving
+    moving,
+    jumping,
+    double_jumping,
+    sliding
 }
 
 state = state_player_movement.moving;
@@ -66,14 +72,25 @@ jump_key = keyboard_check_pressed(ord('Z'));
 illuminate_key = keyboard_check_pressed(vk_space);
 
 if (!place_meeting(x, y + 1, Platform)) {
+    if (state != state_player_movement.double_jumping) {
+        state = state_player_movement.jumping;
+    }
     vspd += grav;
 } else {
     vspd = 0;
+    state = state_player_movement.moving;
 }
 
 switch (state) {
     case state_player_movement.moving:
         jump();
+        horizontal_movement();
+        break;
+    case state_player_movement.jumping:
+        double_jump();
+        horizontal_movement();
+        break;
+    case state_player_movement.double_jumping:
         horizontal_movement();
         break;
 }
