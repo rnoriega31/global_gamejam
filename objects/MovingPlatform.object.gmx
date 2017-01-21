@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>apply_echolocate(id);
+            <string>event_inherited();
 
 movement_duration   = 60;
 position_offset     = 1;
@@ -87,8 +87,31 @@ var spd = 1;
 
 if (point_distance(x, y, next_position_x, next_position_y) &gt; spd) {
     move_towards_point(next_position_x, next_position_y, spd);
+    
+    if (place_meeting(x, y - 1, Player)) {
+        with (Player) {
+            
+            vspd = 0;    
+        
+            var playerSpeedX;   
+
+        
+            if (next_position_x - x &gt; 0) {
+                playerSpeedX = spd;
+            } else if (next_position_x - x &lt; 0) {
+                playerSpeedX = -spd;
+            } else {
+                playerSpeedX = 0;
+            }
+            
+            x += playerSpeedX;
+            y = other.y - (other.sprite_height/2);
+         
+        }
+    }
+    
 } else {
-    if (position_offset + 1&gt;= array_length_1d(positions)) {
+    if (position_offset + 1 &gt;= array_length_1d(positions)) {
         position_offset = 0;
     } else {
         position_offset++;
@@ -97,6 +120,26 @@ if (point_distance(x, y, next_position_x, next_position_y) &gt; spd) {
     show_debug_message("reached"); 
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

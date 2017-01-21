@@ -61,7 +61,10 @@
     <instance objName="Platform" x="128" y="224" name="inst_BDB1CF7B" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player" x="256" y="320" name="inst_43B8A970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="256" y="512" name="inst_33251D25" locked="0" code="" scaleX="14" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="MovingPlatform" x="448" y="320" name="inst_12162090" locked="0" code="movement1[0] = x;&#xA;movement1[1] = y;&#xA;&#xA;movement2[0] = x;&#xA;movement2[1] = y + 300;&#xA;&#xA;movement3[0] = x + 300;&#xA;movement3[1] = y + 300;&#xA;&#xA;positions[0] = movement1;&#xA;positions[1] = movement2;&#xA;positions[2] = movement3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MovingPlatform" x="416" y="320" name="inst_12162090" locked="0" code="movement1[0] = x;&#xA;movement1[1] = y;&#xA;&#xA;movement2[0] = x + 100;&#xA;movement2[1] = y;&#xA;&#xA;movement3[0] = x + 100;&#xA;movement3[1] = y + 100;&#xA;&#xA;positions[0] = movement1;&#xA;positions[1] = movement2;&#xA;positions[2] = movement3;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spike" x="96" y="64" name="inst_79B3410A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spike" x="128" y="64" name="inst_7EE24EFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spike" x="64" y="288" name="inst_60C9AF1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
