@@ -54,6 +54,11 @@ door = instance_find(Door, 0);
 
 if (place_meeting(x, y, Player)) {
     door.image_index++;
+    audio_play_sound(sfx_pickGem, 90, false);
+    
+    if (door.image_index + 1 &gt;= door.image_number) {
+        audio_play_sound(sfx_doorOpen, 90, false);
+    }        
     
     instance_destroy();
 }
