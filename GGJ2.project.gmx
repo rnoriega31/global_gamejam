@@ -9,6 +9,9 @@
     <sprite>sprites\spr_Platform</sprite>
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Spike</sprite>
+    <sprite>sprites\spr_Door</sprite>
+    <sprite>sprites\spr_Diamond</sprite>
+    <sprite>sprites\spr_trigger</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,6 +25,7 @@
       <script>scripts\take_damage.gml</script>
       <script>scripts\apply_echolocate.gml</script>
     </scripts>
+    <script>scripts\trigger_player_collision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Light</object>
@@ -32,9 +36,16 @@
     <object>objects\HitBox</object>
     <object>objects\EchoLocatable</object>
     <object>objects\MovingPlatform</object>
+    <object>objects\Door</object>
+    <object>objects\Diamond</object>
+    <objects name="Triggers">
+      <object>objects\Trigger_1</object>
+      <object>objects\Trigger_2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_stage_2</room>
+    <room>rooms\rm_stage_1</room>
+	<room>rooms\rm_stage_2</room>
     <room>rooms\rm_TestArea</room>
   </rooms>
   <help>
