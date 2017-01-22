@@ -32,6 +32,8 @@
       <script>scripts\double_jump.gml</script>
       <script>scripts\take_damage.gml</script>
       <script>scripts\apply_echolocate.gml</script>
+      <script>scripts\decrease_illuminate_power.gml</script>
+      <script>scripts\reset_illuminate_power.gml</script>
     </scripts>
     <script>scripts\trigger_player_collision.gml</script>
   </scripts>

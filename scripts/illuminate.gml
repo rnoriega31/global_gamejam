@@ -1,5 +1,7 @@
 ///illuminate
 
 if (illuminate_key) {
-    instance_create(x, y, Light);
+    var light = instance_create(x, y, Light);
+    light.expand_rate = light_level[light_level_index];
+    decrease_illuminate_power();
 }

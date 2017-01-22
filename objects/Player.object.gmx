@@ -34,6 +34,11 @@ grav = 1.0;
 jump_spd = 20;
 double_jump_spd = floor(jump_spd * 0.9);
 
+light_level_index = 0
+light_level[0] = 11
+light_level[1] = 6
+light_level[2] = 1
+
 enum state_player_movement {
     moving,
     jumping,
