@@ -99,6 +99,8 @@
     <instance objName="Platform" x="576" y="480" name="inst_CE109C5B" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="608" y="480" name="inst_2C84867C" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="608" y="608" name="inst_3946125E" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="Instructions" x="32" y="0" name="inst_0D1CB0BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirstRoomManager" x="0" y="0" name="inst_181E7455" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
