@@ -10,13 +10,7 @@
   <persistent>0</persistent>
   <colour>1118481</colour>
   <showcolour>-1</showcolour>
-  <code>audio_play_sound(bgm_main, 90, false);
-
-// Player power logic
-Player.can_double_jump  = false;
-Player.can_echolocate   = false;
-
-Door.next_room_index    = rm_stage_2;</code>
+  <code>audio_play_sound(bgm_main, 90, false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -62,16 +56,14 @@ Door.next_room_index    = rm_stage_2;</code>
     <instance objName="Platform" x="0" y="384" name="inst_97D8051B" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="32" y="736" name="inst_5E50D052" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="160" y="736" name="inst_36A38C76" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="288" y="736" name="inst_16C4DEDD" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="448" y="736" name="inst_89F60D23" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="288" y="736" name="inst_16C4DEDD" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="416" y="736" name="inst_89F60D23" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="672" y="736" name="inst_A57DD361" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="800" y="736" name="inst_50549711" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="928" y="736" name="inst_DB4A27EE" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player" x="64" y="704" name="inst_03CF5D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="192" y="352" name="inst_03CF5D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1088" y="480" name="inst_EC28BF37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="576" y="608" name="inst_6236C3D3" locked="0" code="" scaleX="3" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="576" y="480" name="inst_FCE5052A" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="352" y="576" name="inst_3242F144" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="352" y="544" name="inst_3242F144" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Diamond" x="800" y="704" name="inst_72FF2875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="1056" y="736" name="inst_7DD04BD9" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="1184" y="736" name="inst_E4DB4A20" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
@@ -91,21 +83,22 @@ Door.next_room_index    = rm_stage_2;</code>
     <instance objName="Platform" x="3200" y="256" name="inst_C2A1EA55" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="3200" y="128" name="inst_0CC29517" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="3200" y="0" name="inst_EDDB907C" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="Diamond" x="3136" y="32" name="inst_35F2AACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="3072" y="64" name="inst_33A1D7FB" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="2912" y="192" name="inst_53F80F0C" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="2752" y="320" name="inst_4C486BBF" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="2592" y="448" name="inst_DC1339F4" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Platform" x="2432" y="576" name="inst_B00BED4D" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Trigger_1" x="352" y="640" name="inst_121C181C" locked="0" code="" scaleX="2.33333325386047" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Diamond" x="3136" y="192" name="inst_35F2AACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="3072" y="224" name="inst_33A1D7FB" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="2816" y="384" name="inst_DC1339F4" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="2560" y="544" name="inst_B00BED4D" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Trigger_1" x="352" y="576" name="inst_121C181C" locked="0" code="" scaleX="2.33333325386047" scaleY="1.66666662693024" colour="4294967295" rotation="0"/>
     <instance objName="Trigger_2" x="2560" y="320" name="inst_3FA66D98" locked="0" code="" scaleX="6.66666650772095" scaleY="4.33333349227905" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="1824" y="736" name="inst_26CA5FC1" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="1952" y="736" name="inst_4E504317" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="2080" y="736" name="inst_86CEFDF1" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="2208" y="736" name="inst_FD94407F" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="2336" y="736" name="inst_E046FD69" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Power" x="608" y="416" name="inst_D95820A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Power" x="1984" y="640" name="inst_15264D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="544" y="736" name="inst_ECAD98CC" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="576" y="608" name="inst_DE155B0B" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="576" y="480" name="inst_CE109C5B" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="608" y="480" name="inst_2C84867C" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="Platform" x="608" y="608" name="inst_3946125E" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -40,10 +40,10 @@ can_double_jump         = true;
 can_echolocate          = true;
 can_echolocate_delay    = true;
 
-light_level_index = 0
-light_level[0] = 11
-light_level[1] = 6
-light_level[2] = 2
+light_level_index = 0;
+light_level[0] = 11;
+light_level[1] = 6;
+light_level[2] = 3;
 
 
 // Pls forgib
@@ -166,7 +166,7 @@ y -= 2;
             <kind>1</kind>
             <string>/// triggered by Trigger 2
 
-var light = instance_create(2848, 480, Light);
+var light = instance_create(2848, 544, Light);
 light.expand_rate = light_level[light_trigger_2_index];
 
 // forgive me gods of GOF
