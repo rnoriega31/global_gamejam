@@ -63,6 +63,8 @@
     <object>objects\Instructions</object>
     <objects name="InstructionManagers">
       <object>objects\FirstRoomManager</object>
+      <object>objects\EchoInstructionsManager</object>
+      <object>objects\SpikesInstructionsManager</object>
     </objects>
   </objects>
   <rooms name="rooms">
