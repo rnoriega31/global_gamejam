@@ -57,6 +57,7 @@ current_alpha = 1;
             <kind>1</kind>
             <string>with(Player) {
     can_echolocate = true;
+    reset_illuminate_power();
 }
 </string>
           </argument>
