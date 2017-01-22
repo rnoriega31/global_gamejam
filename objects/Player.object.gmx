@@ -66,7 +66,7 @@ state = state_player_movement.moving;
             <kind>1</kind>
             <string>/// triggered by Trigger 2
 
-instance_create(2176, 480, Light);
+instance_create(2848, 480, Light);
 
 var door = instance_find(Door, 0);
 

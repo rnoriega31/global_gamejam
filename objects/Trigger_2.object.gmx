@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>
 
-delay = room_speed * 4; /* seconds */
+delay = room_speed * 3; /* seconds */
 </string>
           </argument>
         </arguments>
