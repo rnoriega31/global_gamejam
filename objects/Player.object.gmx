@@ -173,12 +173,16 @@ light.expand_rate = light_level[light_trigger_2_index];
 light_trigger_2_index++;
 if (light_trigger_2_index &gt; 2) light_trigger_2_index = 2;
 
-// ??
+// ?? 
+/*
 var door = instance_find(Door, 0);
 
 if (door.image_index + 1 != door.image_number) {
-    alarm[1] = room_speed * 3;
+    alarm[1] = room_speed * 2;
 }
+*/
+
+alarm[1] = room_speed * 2;
 </string>
           </argument>
         </arguments>
@@ -209,6 +213,8 @@ light.expand_rate = light_level[light_trigger_1_index];
 // forgive me gods of GOF
 light_trigger_1_index++;
 if (light_trigger_1_index &gt; 2) light_trigger_1_index = 2;
+
+alarm[0] = room_speed * 2;
 </string>
           </argument>
         </arguments>
