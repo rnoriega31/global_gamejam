@@ -73,6 +73,7 @@
       <object>objects\MainScreenText</object>
       <object>objects\CreditsScreenText</object>
     </objects>
+    <object>objects\ResetGame</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_intro</room>

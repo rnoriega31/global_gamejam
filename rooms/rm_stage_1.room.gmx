@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>1118481</colour>
   <showcolour>-1</showcolour>
-  <code>audio_play_sound(bgm_main, 90, false);
+  <code>audio_play_sound(bgm_main, 90, true);
 
 Player.can_double_jump  = false;
 Player.can_echolocate   = false;

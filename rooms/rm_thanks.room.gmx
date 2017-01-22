@@ -196,6 +196,7 @@
     <instance objName="Platform" x="576" y="544" name="inst_2ABD087E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform" x="576" y="512" name="inst_097D0EDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Thanks" x="0" y="0" name="inst_3E0C0BAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ResetGame" x="32" y="0" name="inst_CD386E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
