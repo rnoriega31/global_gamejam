@@ -24,6 +24,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\trigger_player_collision.gml</script>
     <scripts name="Player">
       <script>scripts\horizontal_movement.gml</script>
       <script>scripts\collision.gml</script>
@@ -31,9 +32,12 @@
       <script>scripts\illuminate.gml</script>
       <script>scripts\double_jump.gml</script>
       <script>scripts\take_damage.gml</script>
+      <script>scripts\animation_logic.gml</script>
+      <script>scripts\is_airborne.gml</script>
+    </scripts>
+    <scripts name="General">
       <script>scripts\apply_echolocate.gml</script>
     </scripts>
-    <script>scripts\trigger_player_collision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Light</object>
