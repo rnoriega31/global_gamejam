@@ -241,7 +241,7 @@ alarm[0] = room_speed * 2;
 right_key       = keyboard_check(vk_right);
 left_key        = keyboard_check(vk_left);
 jump_key        = keyboard_check_pressed(vk_space);
-illuminate_key  = keyboard_check_pressed(ord('Z'));
+illuminate_key  = keyboard_check_pressed(ord('R'));
 
 animation_logic();
 
