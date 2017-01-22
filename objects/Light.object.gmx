@@ -36,6 +36,7 @@ alarm[0] = duration;
 
 audio_play_sound(sfx_shine, 90, false);
 
+
 </string>
           </argument>
         </arguments>

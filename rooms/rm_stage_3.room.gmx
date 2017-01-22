@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>2631720</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>audio_play_sound(bgm_main, 90, false);
+
+Door.next_room_index = rm_thanks;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
