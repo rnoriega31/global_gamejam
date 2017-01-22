@@ -37,7 +37,12 @@ double_jump_spd = floor(jump_spd * 0.9);
 light_level_index = 0
 light_level[0] = 11
 light_level[1] = 6
-light_level[2] = 1
+light_level[2] = 2
+
+
+// Pls forgib
+light_trigger_1_index = 0;
+light_trigger_2_index = 0;
 
 enum state_player_movement {
     moving,
@@ -131,8 +136,14 @@ y -= 2;
             <kind>1</kind>
             <string>/// triggered by Trigger 2
 
-instance_create(2848, 480, Light);
+var light = instance_create(2848, 480, Light);
+light.expand_rate = light_level[light_trigger_2_index];
 
+// forgive me gods of GOF
+light_trigger_2_index++;
+if (light_trigger_2_index &gt; 2) light_trigger_2_index = 2;
+
+// ??
 var door = instance_find(Door, 0);
 
 if (door.image_index + 1 != door.image_number) {
@@ -162,7 +173,12 @@ if (door.image_index + 1 != door.image_number) {
             <kind>1</kind>
             <string>/// triggered by Trigger_1
 
-instance_create(288, 576, Light);
+var light = instance_create(288, 576, Light);
+light.expand_rate = light_level[light_trigger_1_index];
+
+// forgive me gods of GOF
+light_trigger_1_index++;
+if (light_trigger_1_index &gt; 2) light_trigger_1_index = 2;
 </string>
           </argument>
         </arguments>
