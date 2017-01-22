@@ -32,9 +32,10 @@ current_alpha = 1;
 expand_rate = 11;
 duration = room_speed;
 
-this_id = id; /* reference to this object */
-
 alarm[0] = duration;
+
+audio_play_sound(sfx_shine, 90, false);
+
 </string>
           </argument>
         </arguments>
