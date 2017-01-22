@@ -20,6 +20,8 @@
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_PlayerJumping</sprite>
     <sprite>sprites\spr_PlayerPreJumping</sprite>
+    <sprite>sprites\spr_Power</sprite>
+    <sprite>sprites\spr_PowerSource</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,6 +58,7 @@
       <object>objects\Trigger_1</object>
       <object>objects\Trigger_2</object>
     </objects>
+    <object>objects\Power</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stage_1</room>
