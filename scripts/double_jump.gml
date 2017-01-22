@@ -1,6 +1,6 @@
 ///double_jump()
 
-if (jump_key) {
+if (jump_key && can_double_jump) {
     
     state = state_player_movement.double_jumping;
     

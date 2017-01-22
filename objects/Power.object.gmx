@@ -38,6 +38,31 @@ current_alpha = 1;
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(Player) {
+    can_echolocate = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -56,7 +81,6 @@ current_alpha = 1;
           <argument>
             <kind>1</kind>
             <string>
-
 current_alpha -= 1/duration;
 current_x_scale += 1/duration;
 current_y_scale += 1/duration;
@@ -70,6 +94,11 @@ if (current_alpha &lt;= 0) {
 image_alpha = current_alpha;
 image_xscale = current_x_scale;
 image_yscale = current_y_scale;
+
+
+if (place_meeting(x, y, Player)) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

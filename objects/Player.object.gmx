@@ -25,14 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-spd = 6;
-hspd = 0;
-vspd = 0;
-grav = 1.0;
+            <string>///Creation logic
 
-jump_spd = 20;
-double_jump_spd = floor(jump_spd * 0.9);
+spd     = 6;
+hspd    = 0;
+vspd    = 0;
+grav    = 1.0;
+
+jump_spd            = 20;
+double_jump_spd     = floor(jump_spd * 0.9);
+echolocate_delay    = 120;
+
+can_double_jump         = true;
+can_echolocate          = true;
+can_echolocate_delay    = true;
 
 light_level_index = 0
 light_level[0] = 11
@@ -59,8 +65,32 @@ enum state_player_animation {
     landing
 }
 
+// States
 animation_state = state_player_animation.standing;
-state = state_player_movement.moving;
+state           = state_player_movement.moving;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_echolocate_delay = true;
 </string>
           </argument>
         </arguments>
