@@ -41,9 +41,13 @@ can_echolocate          = true;
 can_echolocate_delay    = true;
 
 light_level_index = 0;
-light_level[0] = 11;
-light_level[1] = 6;
-light_level[2] = 3;
+
+light_level[0] = 12;
+light_level[1] = 10;
+light_level[2] = 8;
+light_level[3] = 6;
+light_level[4] = 4;
+
 
 
 // Pls forgib
