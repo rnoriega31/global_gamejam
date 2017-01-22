@@ -68,6 +68,7 @@
   <rooms name="rooms">
     <room>rooms\rm_stage_1</room>
     <room>rooms\rm_stage_2</room>
+    <room>rooms\rm_stage_3</room>
     <room>rooms\rm_TestArea</room>
   </rooms>
   <help>
