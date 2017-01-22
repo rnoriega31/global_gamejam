@@ -34,7 +34,7 @@ if (place_meeting(x, y + vspd, Platform)) {
 y += vspd;
 
 // Animations
-
+/*
 if (animation_state != state_player_animation.pre_jumping) { 
     if (!right_key && !left_key) {
         animation_state = state_player_animation.standing;
@@ -45,5 +45,5 @@ if (animation_state != state_player_animation.pre_jumping) {
     if (! place_meeting(x, y + 1, Platform)) {
         animation_state = state_player_animation.jumping;
     } 
-}
+}*/
 

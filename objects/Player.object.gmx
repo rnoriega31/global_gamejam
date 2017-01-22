@@ -202,11 +202,12 @@ if (light_trigger_1_index &gt; 2) light_trigger_1_index = 2;
           <argument>
             <kind>1</kind>
             <string>
-
 right_key       = keyboard_check(vk_right);
 left_key        = keyboard_check(vk_left);
 jump_key        = keyboard_check_pressed(vk_space);
 illuminate_key  = keyboard_check_pressed(ord('Z'));
+
+animation_logic();
 
 if (!place_meeting(x, y + 1, Platform)) {
     if (state != state_player_movement.double_jumping) {
