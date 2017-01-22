@@ -23,6 +23,8 @@
     <sprite>sprites\spr_Power</sprite>
     <sprite>sprites\spr_PowerSource</sprite>
     <sprite>sprites\spr_Instructions</sprite>
+    <sprite>sprites\spr_mainScreen</sprite>
+    <sprite>sprites\spr_Credits</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -67,13 +69,19 @@
       <object>objects\SpikesInstructionsManager</object>
     </objects>
     <object>objects\Thanks</object>
+    <objects name="Text">
+      <object>objects\MainScreenText</object>
+      <object>objects\CreditsScreenText</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_intro</room>
+    <room>rooms\rm_stage_1</room>
     <room>rooms\rm_stage_2</room>
     <room>rooms\rm_stage_3</room>
-    <room>rooms\rm_stage_1</room>
     <room>rooms\rm_thanks</room>
     <room>rooms\rm_TestArea</room>
+    <room>rooms\rm_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
