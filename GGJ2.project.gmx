@@ -26,7 +26,9 @@
     <sprite>sprites\spr_mainScreen</sprite>
     <sprite>sprites\spr_Credits</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_Mesh</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\trigger_player_collision.gml</script>
